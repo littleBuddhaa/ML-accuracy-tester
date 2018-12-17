@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Our website</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href="https://fonts.googleapis.com/css?family=Jura|Pacifico|Poiret+One|Quicksand|Righteous|Rosario|Sacramento|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jura|Poiret+One|Quicksand|Righteous|Rosario|VT323" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Audiowide|Julius+Sans+One|Montserrat|Notable|Orbitron|Oxygen|Righteous" rel="stylesheet">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/styles/style.css')}}">
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Julius+Sans+One|Montserrat|Notable|Orbitron|Oxygen|Righteous" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/styles/style.css') }}">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  </head>
+  <body>
+    <div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title" id="myModalLabel">Dataset description</h1>
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <h3> Pima Indians dataset</h3>
+                <p>The datasets consist of several medical predictor (independent) variables and one target (dependent) variable, Outcome. Independent variables include the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.</p>
+                <h3> Sonar dataset</h3>
+                <p>The file "sonar.mines" contains 111 patterns obtained by bouncing sonar signals off a metal cylinder at various angles and under various conditions. The file "sonar.rocks" contains 97 patterns obtained from rocks under similar conditions. The transmitted sonar signal is a frequency-modulated chirp, rising in frequency. The data set contains signals obtained from a variety of different aspect angles, spanning 90 degrees for the cylinder and 180 degrees for the rock.
+
+                    Each pattern is a set of 60 numbers in the range 0.0 to 1.0. Each number represents the energy within a particular frequency band, integrated over a certain period of time. The integration aperture for higher frequencies occur later in time, since these frequencies are transmitted later during the chirp.
+                    
+                    The label associated with each record contains the letter "R" if the object is a rock and "M" if it is a mine (metal cylinder). The numbers in the labels are in increasing order of aspect angle, but they do not encode the angle directly.</p>
+                    <h3> Glass Classification</h3>
+                <p>In this dataset we have to identify glass type.
+
+Class Distribution: (out of 214 total instances) -- 163 Window glass (building windows and vehicle windows) -- 87 float processed 
+-- 70 building windows -- 17 vehicle windows -- 76 non-float processed -- 76 building windows -- 0 vehicle windows -- 51 Non-window glass -- 13 containers -- 9 tableware -- 29 headlamps</p>
+                
+                    <h3>Banknote Dataset</h3>
+                <p>The Banknote Dataset involves predicting whether a given banknote is authentic given a number of measures taken from a photograph.It is a binary (2-class) classification problem. The number of observations for each class is not balanced. There are 1,372 observations with 4 input variables and 1 output variable. The variable names are as follows:<br>
+
+                 &nbsp;&nbsp;1)Variance of Wavelet Transformed image (continuous).<br>
+                 &nbsp;&nbsp;2)Skewness of Wavelet Transformed image (continuous).<br>
+                 &nbsp;&nbsp;3)Kurtosis of Wavelet Transformed image (continuous).<br>
+                 &nbsp;&nbsp;4)Entropy of image (continuous).<br>
+                 &nbsp;&nbsp;5)Class (0 for authentic, 1 for inauthentic)</p>
+                  <h3>Haberman's Survival Data</h3>
+                  <p>The dataset contains cases from a study that was conducted between 1958 and 1970 at the University of Chicago's Billings Hospital on the survival of patients who had undergone surgery for breast cancer.There are 306 number of instances and 4 attributes namely :-<br>
+                     1. Age of patient at time of operation (numerical)<br>
+                     2. Patient's year of operation (year - 1900, numerical)<br>
+                     3. Number of positive axillary nodes detected (numerical)<br>
+                     4. Survival status (class attribute)<br>
+                      &nbsp;     1 = the patient survived 5 years or longer<br>
+                      &nbsp;     2 = the patient died within 5 year</p>
+                    <h3> Red Wine Quality Dataset</h3>
+                <p>The Wine Quality Dataset involves predicting the quality of white wines on a scale given chemical measures of each wine.It is a multi-class classification problem, but could also be framed as a regression problem. The number of observations for each class is not balanced. There are 4,898 observations with 11 input variables and one output variable.Some variable names are pH, Density, Alcohol quantity and so on. </p>
+                
+                
+               
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      <script>
+          $(window).on('load', function(){
+              if( {{ var1 }}==1){
+              $('#myModal').modal('show');
+              }
+          });
+      </script>
+      <!--sliding js-->
+      <script>
+      $(document).ready(function(){
+
+
+        $("#choose").click(function(){
+          $("#first").slideUp("slow", function(){
+            $("#second").slideDown("slow")
+          });
+        });
+
+         
+         $("#custom").click(function(){
+          $("#second").slideUp("slow", function(){
+            $("#first").slideDown("slow")
+          });
+        });
+
+
+      });
+      
+      
+      </script>
+
+    <div class = "container1" class = "class1">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+        <div id = "flash"class="alert alert-dismissible flashalert" role="alert">
+        <button style="color:white;"type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        {{message}}
+        </div>
+      {% endfor %}
+      {% endif %}
+    {% endwith %}
+    {% block body %}{% endblock %}
+      <script>
+        $(window).on('load', function(){
+            if( {{ var1 }}==1){
+            $('#myModal').modal('show');
+            }
+        });
+    </script>
+    </div>
+      <script type="text/javascript">
+  window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+  
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+  
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+  }
+  </script>
+    <div id = "particles-js">
+
+        <div class = "navname" >
+                Welcome {{user}}
+       </div>
+       <button id = "about" onclick="smoothScroll(document.getElementById('howto')) " >How To</button>
+      
+       
+       <div class =  "leftnav">
+          <form action = "/dashboard" method= "POST">
+            <input class = "dashbutton" type = "submit"  value = "Go to Dashboard">
+            
+            </form>
+
+            <form action = "/logout" method="POST">
+              <input type = "submit" class = "logoutfromhome" value="Log Out">
+              </form>
+        <script>
+         $("#inputRedirect").click(function() {
+          
+          });
+        </script>
+       </div>
+       <div class = "rightnav">
+
+       </div>
+
+
+
+       <div class = "my_head">
+
+        Working in ML ? <br>
+        <span style = "margin-left:12%;position:absolute;">We're here to help!</span>
+      </div>
+
+
+
+      <div class = "left">
+          <div class = "formhead">
+            <div class = "formheadtext">
+            Run Accuracy Test! 
+            </div>
+          </div>
+            <div id= "first">
+
+              <form class = "homeform class1" method=post enctype=multipart/form-data action = "/input">
+                <span class = "pink" >Select Your Models</span><br><br>
+                 <input type="checkbox" name="option1" value="LR"> <span class = "cb">Logistic Regression</span><br>
+                 <input type="checkbox" name="option2" value="LDA" ><span class = "cb">Linear Discriminant Analysis</span><br>
+                 <input type="checkbox" name="option3" value="KNN"> <span class = "cb" >K Neighbors Classifier</span><br>
+                 <input type="checkbox" name="option4" value="CART"> <span class = "cb" >Decision Tree Classifier</span><br>
+                 <input type="checkbox" name="option5" value="NB" ><span class = "cb">Gaussian NB</span><br>
+                 <input type="checkbox" name="option6" value="SVM"> <span class = "cb">SVC</span><br>
+                 <br>
+              
+         
+                 <span class = "pink2" >Number Of Parameters</span><br><br> <input class="par" type="number" name="numOfPar" value="0"><br> <br>      
+                 <span class = "pink3" >Upload Dataset <span style ="margin-left:0%;font-size: 20px;color: white;font-family: 'Quicksand', sans-serif;text-decoration:none;" >(Only .csv format)</span></span></span><br><br>
+             <input class = "myfile" type=file name=file><br><br>
+               
+               <input class = "upload"type=submit value=Upload>
+ 
+               <a href = "#" class = "choose" id = "choose" style="  margin-left: 15%;
+               font-size: 20px;color: white;font-family: 'Quicksand', sans-serif;" >Or Choose from our Datasets</a>
+             </form>
+             </div>
+           <div id = "second">
+            <form class = "homeform class1" method=post enctype=multipart/form-data action = "/inputnew">
+              <span class = "pink" >Select Your Models</span><br><br>
+               <input type="checkbox" name="option1" value="LR"> <span class = "cb">Logistic Regression</span><br>
+               <input type="checkbox" name="option2" value="LDA" ><span class = "cb">Linear Discriminant Analysis</span><br>
+               <input type="checkbox" name="option3" value="KNN"> <span class = "cb" >K Neighbors Classifier</span><br>
+               <input type="checkbox" name="option4" value="CART"> <span class = "cb" >Decision Tree Classifier</span><br>
+               <input type="checkbox" name="option5" value="NB" ><span class = "cb">Gaussian NB</span><br>
+               <input type="checkbox" name="option6" value="SVM"> <span class = "cb">SVM</span><br>
+               <br>
+                 
+               <span class = "pink3" >Choose Dataset <a href = "#popup"  role = "button" data-toggle="modal" data-target="#myModal11"><span style ="margin-left:-10%;font-size: 20px;color: white;font-family: 'Quicksand', sans-serif;text-decoration:none;" >(See description)</span></a></span><br><br>
+               <input name = "d" type = "radio" value ="A"><span class = "cb">Pima Indian Diabetes</span><br>
+              <input name = "d"type = "radio" value ="B"><span class = "cb">Sonar Dataset</span><br>
+              <input name = "d"type = "radio" value ="C"> <span class = "cb">Glass Classification</span><br>
+              <input name = "d"type = "radio" value ="D"> <span class = "cb">Banknote Dataset</span><br>
+              <input name = "d"type = "radio" value ="E"><span class = "cb"> Haberman's Survival Data
+</span><br>
+              <input name = "d"type = "radio" value ="F"> <span class = "cb">Red Wine Quality</span><br><br>
+              <input class ="upload" type = "submit" value = "Upload">
+             <a href = "#" class = "custom" id = "custom" style="  margin-left: 10%;
+             font-size: 20px;color: white;font-family: 'Quicksand', sans-serif;" >Click here to give custom Dataset</a>
+           </form>
+
+
+           </div> 
+
+            
+              
+            {% if var1 ==1%}
+            <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      
+                    </div>
+                    <div class="modal-body">
+                      
+                      <img src={{var0}} />
+              
+                                      <p style = "background-color: #e6d8e6;
+                    padding: 10px;
+                    font-size: 35px;
+                      font-family: 'Righteous', cursive;">Accuracy</p>
+                        {% if temp[0] == 1 %}
+                         <p class = "acnum">Logistic Regression : {{temp[6]}}</p>
+                         {% endif %}
+                         {% if temp[1]==1 %}
+                         <p class = "acnum">Linear Discriminant Analysis : {{temp[7]}}</p>
+                         {% endif %}
+                         {% if temp[2]==1 %}
+                         <p class = "acnum">K Neighbors Classifier : {{temp[8]}}</p>
+                         {% endif %}
+                         {% if temp[3]==1 %}
+                         <p class = "acnum">Decision Tree Classifier : {{temp[9]}}</p>
+                         {% endif %}
+                         {% if temp[4]==1 %}
+                         <p class = "acnum">Gaussian NB : {{temp[10]}}</p>
+                         {% endif %}
+                         {% if temp[5]==1 %}
+                         <p class = "acnum">Support Vector : {{temp[11]}}</p>
+                        {% endif %}
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+  
+              {%endif%}
+        </div>
+
+        <script src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"> </script>
+
+
+
+
+    
+</div>
+
+<div id = "howto" class = "howto">
+
+  Get started in no time
+</div>
+<div class = "steps">
+  <div class = "step1">
+    <span style = "  font-size: 250px;
+    margin-top: -12%;
+    position: absolute;
+    color: #e4dae4f7;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;">1</span><br>
+    <div class = "text">
+    Choose from the most widely used Machine 
+    Learning Models for which you want to compare the accuracy
+    for.<br>
+    We use Box & Whisker plot to compare the accuracies.</div>
+  </div>
+  <div class = "step2">
+    <span style = "  font-size: 250px;
+    margin-top: -12%;
+    position: absolute;
+    color: #e4dae4f7;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;"
+    >2</span><br>
+    <div class = "text">
+    Select the number of parameters you have for your custom
+    dataset.
+      </div>
+  </div>
+
+  <div class = "step3">
+    <span style = "  font-size: 250px;
+    margin-top: -12%;
+    position: absolute;
+    color: #e4dae4f7;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;">3 </span><br> 
+    <div class = "text">
+    Upload your dataset is csv format. We only accept 
+    datasets containg integer or float values. The 
+    running time depends on the size of your dataset.<br>
+    <span> Register to store your results and get access to free datasets provided by us.</span>
+      </div>
+
+
+  </div>
+
+</div>
+</body>
+</html>
