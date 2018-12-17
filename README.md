@@ -15,3 +15,9 @@ Choose from the most widely used machine learning models -
 ![screenshot from 2018-10-29 16-36-07](https://user-images.githubusercontent.com/36421943/50080051-3c3f6d00-0211-11e9-8b09-782a6ccfaa2b.png)
 ![screenshot from 2018-10-29 16-17-57](https://user-images.githubusercontent.com/36421943/50080063-419cb780-0211-11e9-8d92-127a09bef2bb.png)
 
+Project Contributors :
+Tanya Agarwal 
+Sominee Gupta
+Rochisha Haldyani
+Chahak Sharma
+Ridam Arora
